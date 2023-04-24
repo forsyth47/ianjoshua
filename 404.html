@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Current URL</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		#current-url {
+			font-size: 24px;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<p id="current-url"></p>
+	
+	<script>
+		let currentUrl = window.location.href;
+		document.getElementById("current-url").innerHTML = currentUrl;
+	</script>
+</body>
+</html>
